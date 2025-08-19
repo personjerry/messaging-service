@@ -5,8 +5,15 @@ from django.urls import include
 from django.urls import path
 from django.views import defaults as default_views
 from django.views.generic import TemplateView
+from messaging_service.api.urls import urlpatterns as api_urls
 
 urlpatterns = [
+    path("api/", include(api_urls)),
+]
+
+# To the reader: everything below this line is the default cookiecuttter django boilerplate.
+
+urlpatterns += [
     path("", TemplateView.as_view(template_name="pages/home.html"), name="home"),
     path(
         "about/",

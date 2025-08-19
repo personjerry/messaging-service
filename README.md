@@ -1,5 +1,15 @@
 # Backend Interview Project
 
+## Jerry's Notes
+
+I've started with a cookiecutter django project because it comes with batteries included. It's overkill by a longshot but I'm optimizing for dev speed.
+
+Hence I've provided instructions for reading:
+
+The key code is basically in `messaging_service/api`
+
+## Previous Stuff
+
 This is a scaffold for Hatch's backend interview project. It includes basic setup for development, testing, and deployment.
 
 ## Guidelines
